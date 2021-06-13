@@ -3,12 +3,13 @@ name: Shell Commands
 on: [push]
 
 jobs: 
-  runs-on: ubuntu-latest
-  steps: 
-    - name: Echo a string
-      run: echo "Hello Sat"
-    - name: multiline script
-      run: |
-        node -v
-        npm -v
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Echo a string
+        run: echo "Hello Sat"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
 
